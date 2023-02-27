@@ -6,13 +6,13 @@ const {
 
 const actions = {
   "View All Employees": handleViewAllEmployees,
-  // "Add Employee": handleAddEmployee,
-  // "Update Employee Role": handleUpdateEmployeeRole,
-  // "View All Roles": handleViewAllRoles,
-  // "Add Role": handleAddRole,
-  // "View All Departments": handleViewAllDepartments,
-  // "Add Department": handleAddDepartment,
-  // "View All Managers": handleViewAllManagers,
+  "Add Employee": handleAddEmployee,
+  "Update Employee Role": handleUpdateEmployeeRole,
+  "View All Roles": handleViewAllRoles,
+  "Add Role": handleAddRole,
+  "View All Departments": handleViewAllDepartments,
+  "Add Department": handleAddDepartment,
+  "View All Managers": handleViewAllManagers,
 };
 
 const mainPrompt = () => {
