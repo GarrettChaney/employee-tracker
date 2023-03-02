@@ -1,5 +1,6 @@
 const inquirer = require("inquirer");
 const db = require("./config/connection.js");
+const cTable = require("console.table");
 
 const handleViewAllEmployees = () => {
   let sql = `SELECT employee.id,
@@ -28,8 +29,8 @@ const handleViewAllRoles = () => {
   db.query(query, (err, res) => {
     if (err) throw err;
     console.table(res);
+    mainPrompt();
   });
-  mainPrompt();
 };
 
 const handleViewAllDepartments = () => {
